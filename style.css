@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+.centralizar{
+    text-align: center;
+}
+
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+
+
+main{
+    background-color: white;
+    width: 600px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.61);
+    margin-top: 17px;
+    border-style: solid;
+    font-weight: lighter;
+}
+
+img{
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 5px 5px 5px black;
+    
+}
+
+a{
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    width: max-content;
+    margin: auto;
+    color: gray;
+    background-attachment: fixed;
+    font-weight: bolder;
+    
+}
+
+.destaque{
+    font-weight: 900;
+}
+
+.opcoes{
+    display: inline-block;
+    background-color: rgba(0, 0, 139, 0.796);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    border-radius: 7px;
+    text-align: center;
+    height: 24px;
+    width: 160px;
+    margin: 2px 4px;
+    padding: -1px 5px;
+    margin-bottom: 5px;
+
+}
+
+.menu{
+    text-align: left;
+}
+
+.principal{
+    margin-top: 150px;
+}
+
+.redes{
+    color: black;
+    text-decoration: underline;
+}
+
+.pergunta{
+    margin-top: 100px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+    
+}
+
+.sub{
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 150px;
+}
+
+hr{
+    border: none; 
+    height: 5px; 
+    background-color: black; 
+    width: 100%; 
+    margin: 20px auto ; 
+    border-radius: 10px; 
+}
+
+header{
+    background-image: linear-gradient(to bottom, white, #A8D7FF, #89C8F7, #4B87AD);
+}
+
+@media (min-width: 320px) and (max-width: 440px) {
+    img{
+        width: 310px;
+    }
+
+    main{
+        width: auto;
+        font-size: 1.5em;
+    }
+
+    .menu{
+        text-align: center;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1114px) {
+    .sub{
+        font-size: 1.7em;
+    }
+
+    .opcoes{
+        height: 36px;
+        width: 185px;
+        padding-top: 8px;
+        font-size: 1.54em;
+    }
+
+    img{
+        width: 95%;
+    }
+
+    main{
+        font-size: 1.4em;
+    }
+
+    footer{
+        margin-bottom: 2em;
+    }
+
+    .menu{
+        column-count: 2;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 2048px) {
+    .sub{
+        font-size: 2em;       
+    }
+
+    .opcoes{
+        height: 36px;
+        width: 215px;
+        padding-top: 8px;
+        font-size: 1.7em;
+    }
+
+    .pergunta{
+        font-size: 3em;
+    }
+
+    main{
+        font-size: 2em;
+        width: 1000px;
+    }
+
+    .redessociais{
+        font-size: 2.75em;
+    }
+
+    .sociais{
+        font-size: 2.5em;
+    }
+
+    footer{
+        font-size: 2em;
+    }
+
+
+}
+
+
