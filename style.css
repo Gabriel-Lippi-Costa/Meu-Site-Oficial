@@ -114,7 +114,7 @@ header{
     background-image: linear-gradient(to bottom, white, #A8D7FF, #89C8F7, #4B87AD);
 }
 
-@media (min-width: 320px) and (max-width: 440px) {
+@media (min-width: 320px) and (max-width: 767px) {
     img{
         width: 310px;
     }
@@ -131,7 +131,7 @@ header{
 
 }
 
-@media (min-width: 768px) and (max-width: 1114px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .sub{
         font-size: 1.7em;
     }
@@ -161,7 +161,7 @@ header{
     }
 }
 
-@media (min-width: 1280px) and (max-width: 2048px) {
+@media (min-width: 1025px) and (max-width: 1920px) {
     .sub{
         font-size: 2em;       
     }
