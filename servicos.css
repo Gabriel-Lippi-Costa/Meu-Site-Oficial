@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 header{
     background-image: linear-gradient(to bottom, white, #A8D7FF, #89C8F7, #4B87AD);
 }
