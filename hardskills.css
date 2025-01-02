@@ -167,6 +167,7 @@ footer{
     color: gray;
     background-attachment: fixed;
     font-weight: bolder;
+    font-size: 16px;
 }
 hr{
 border: none; 
@@ -181,7 +182,7 @@ header{
    background-image: linear-gradient(to bottom, white, #A8D7FF, #89C8F7, #4B87AD);
 }
 
-@media (min-width: 320px) and (max-width: 440px) {
+@media (min-width: 320px) and (max-width: 767px) {
    .habilidadesum{
       display: block;
    }
@@ -231,9 +232,17 @@ header{
 
 }
 
-@media (min-width: 768px) and (max-width: 1114px) {
+@media (min-width: 768px) and (max-width: 1024px) {
    .habilidadesum{
       justify-content: center;
+   }
+
+   footer{
+      font-size: 24px;
+   }
+
+   .voltar{
+      font-size: 1.5em;
    }
 }
 

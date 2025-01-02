@@ -23,6 +23,7 @@ html, body{
 }
 li{
     font-size: 1.5em;
+    margin-left: 32px;
 }
 footer{
     width: max-content;
@@ -45,3 +46,12 @@ hr{
         background-image: linear-gradient(to bottom, white, #A8D7FF, #89C8F7, #4B87AD);
     }
 
+    @media (min-width: 768px) and (max-width: 1024px) {
+        footer{
+            font-size: 24px;
+        }
+
+        .pagum{
+            font-size: 1.5em;
+         }
+    }

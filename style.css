@@ -23,21 +23,20 @@ h1{
 p{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
+    font-size: 24px;
+    padding: 15px;
 }
 
 
 
 main{
     background-color: white;
-    width: 600px;
+    width: max-content;
     margin: auto;
-    padding: 15px;
     border-radius: 10px;
     border-color: rgba(0, 0, 0, 0.61);
     margin-top: 17px;
     border-style: solid;
-    font-weight: lighter;
 }
 
 img{
@@ -132,11 +131,18 @@ header{
 
     main{
         width: auto;
-        font-size: 1.5em;
     }
 
     .menu{
         text-align: center;
+    }
+
+    .texto{
+        font-size: 18px;
+    }
+
+    .sociais{
+        font-size: 1em;
     }
 
 
@@ -159,11 +165,16 @@ header{
     }
 
     main{
-        font-size: 1.4em;
+        width: auto;
+    }
+    
+    .texto{
+        font-size: 24px;
     }
 
     footer{
         margin-bottom: 2em;
+        font-size: 24px;
     }
 
     .menu{
@@ -198,7 +209,7 @@ header{
     }
 
     .sociais{
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     footer{
