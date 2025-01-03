@@ -67,18 +67,30 @@ footer{
 
 .opcoes{
     display: inline-block;
-    background-color: rgba(0, 0, 139, 0.796);
-    color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2em;
     border-radius: 7px;
     text-align: center;
-    height: 24px;
+    height: auto;
     width: 160px;
     margin: 2px 4px;
-    padding: -1px 5px;
+    padding: 5px;
     margin-bottom: 5px;
 
+}
+
+header > .menu > .opcoes > a:hover{
+    transform: translate(-3px, -3px);
+    transition: transform 0.3s;
+    display: inline-block;
+    color: rgba(0, 0, 255, 0.615);
+    transform: scale(1.2);
+    border-radius: 45%;
+}
+
+.cor{
+    font-size: 1.2em;
+    color: black;
 }
 
 .menu{
