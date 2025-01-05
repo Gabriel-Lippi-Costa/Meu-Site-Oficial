@@ -152,13 +152,64 @@ body{
     height: max-content;
     border-style: solid;
     margin-top: 9em;
-    
  }
 
  .titulogimp{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5em;
+ }
+
+ .habilidadequatro{
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .word{
+   border-style: solid;
+   width: max-content;
+   height: max-content;
+   border-radius: 5px;
+   border-color: black;
+   margin-top: 9em;
+   margin-left: 5em;
+ }
+
+ .tituloword{
+   text-align: center;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1.5em;
+ }
+
+ .excel{
+   border-style: solid;
+   width: max-content;
+   height: max-content;
+   border-radius: 5px;
+   border-color: black;
+   margin-top: 85px;
+ }
+
+ .tituloexcel{
+   text-align: center;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1.5em;
+ }
+
+ .power{
+   border-style: solid;
+   width: max-content;
+   height: max-content;
+   border-radius: 5px;
+   border-color: black;
+   margin-top: 85px;
+   margin-right: 5em;
+ }
+
+ .titulopower{
+   text-align: center;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1.5em;
  }
 
 footer{
@@ -196,6 +247,10 @@ header{
       display: block;
    }
 
+   .habilidadequatro{
+      display: block;
+   }
+
    .html{
       margin-left: 0;
       text-align: center;
@@ -227,7 +282,19 @@ header{
 
    .github{
       text-align: center;
-      
+   }
+
+   .word{
+      margin-top: 0;
+      margin: auto;
+   }
+   .excel{
+      margin-top: 0;
+      margin: auto;
+   }
+   .power{
+      margin-top: 0;
+      margin: auto;
    }
 
 }
@@ -237,12 +304,25 @@ header{
       justify-content: center;
    }
 
+   .habilidadequatro{
+      justify-content: center;
+   }
+   .word{
+      margin-top: 85px;
+   }
+
    footer{
       font-size: 24px;
    }
 
    .voltar{
       font-size: 1.5em;
+   }
+}
+
+@media (min-width: 1025px) and (max-width: 1920px) {
+   .word{
+      margin-top: 80px;
    }
 }
 
