@@ -528,6 +528,56 @@ header .mobile-menu.active .line3 {
 
 /*FIM CONTATOS*/
 
+/* Animação para h1 - Aparece de baixo para cima com leve fade */
+h1 {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animação para img-certificado - Suave descida com rotação sutil */
+.img-certificado {
+    opacity: 0;
+    transform: translateY(100px) rotate(-5deg);
+    transition: opacity .7s ease-in-out, transform .7s ease-in-out;
+}
+
+.show-dois {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+}
+
+/* Animação para skills - Aparece com efeito de zoom + blur removendo gradualmente */
+.skills {
+    opacity: 0;
+    filter: blur(10px);
+    transform: scale(0.8);
+    transition: opacity 1s ease, transform 1s ease, filter 1s ease;
+}
+
+.show-tres {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+}
+
+/* Animação para .proje - Aparição suave com leve subida e rotação */
+.proje {
+    opacity: 0;
+    transform: translateY(100px) rotate(-5deg);
+    transition: opacity .7s ease-in-out, transform .7s ease-in-out;
+}
+
+.show-quatro {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+}
+
 
 @keyframes digita {
 
@@ -609,54 +659,4 @@ header .mobile-menu.active .line3 {
     header .mobile-menu {
         display: block;
     }
-}
-
-/* Animação para h1 - Aparece de baixo para cima com leve fade */
-h1 {
-    opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
-}
-
-.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Animação para img-certificado - Suave descida com rotação sutil */
-.img-certificado {
-    opacity: 0;
-    transform: translateY(100px) rotate(-10deg);
-    transition: opacity 5s ease-in-out, transform 5s ease-in-out;
-}
-
-.show-dois {
-    opacity: 1;
-    transform: translateY(0) rotate(0deg);
-}
-
-/* Animação para skills - Aparece com efeito de zoom + blur removendo gradualmente */
-.skills {
-    opacity: 0;
-    filter: blur(10px);
-    transform: scale(0.8);
-    transition: opacity 1s ease, transform 1s ease, filter 1s ease;
-}
-
-.show-tres {
-    opacity: 1;
-    filter: blur(0);
-    transform: scale(1);
-}
-
-/* Animação para .proje - Aparição suave com leve subida e rotação */
-.proje {
-    opacity: 0;
-    transform: translateY(20px) rotate(10deg) scale(0.95);
-    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
-}
-
-.show-quatro {
-    opacity: 1;
-    transform: translateY(0) rotate(0deg) scale(1);
 }
