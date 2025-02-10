@@ -1,544 +1,588 @@
 * {
     margin: 0;
     padding: 0;
-    }
-    
-    @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Syne:wght@400..800&display=swap');
-    
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    
-    html {
-        scroll-behavior: smooth;
-        scroll-padding-top: 70px;
-    }
-    
-    body {
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Syne:wght@400..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {
     background-color: #292929;
-    }
-    
-    header {
+}
+
+header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 99999;
-    }
-    
-    header a {
+}
+
+header a {
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
-    }
-    
-    header a:hover {
+}
+
+header a:hover {
     opacity: 0.7;
-    }
-    
-    header .logo {
+}
+
+header .logo {
     font-family: "Merienda", serif;
     font-size: 24px;
     letter-spacing: 4px;
-    }
-    
-    header nav {
+}
+
+header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: black;
     height: 8vh;
-    }
-    
-    header  .nav-list {
+}
+
+header .nav-list {
     list-style: none;
     display: flex;
-    }
-    
-    header .nav-list li {
+}
+
+header .nav-list li {
     font-family: "Merienda", serif;
     font-size: 24px;
     letter-spacing: 3px;
     margin-left: 32px;
-    }
-    
-    header  .mobile-menu {
+}
+
+header .mobile-menu {
     display: none;
     cursor: pointer;
-    }
-    
-    header .mobile-menu div {
+}
+
+header .mobile-menu div {
     width: 32px;
     height: 2px;
     background: #fff;
     margin: 8px;
     transition: 0.3s;
-    }
-    
-    header .nav-list.active {
+}
+
+header .nav-list.active {
     transform: translateX(0);
-    }
-    
-    @keyframes navLinkFade {
+}
+
+@keyframes navLinkFade {
     from {
         opacity: 0;
         transform: translateX(50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
     }
-    }
-    
-    header .mobile-menu.active .line1 {
+}
+
+header .mobile-menu.active .line1 {
     transform: rotate(-45deg) translate(-8px, 8px);
-    }
-    
-    header .mobile-menu.active .line2 {
+}
+
+header .mobile-menu.active .line2 {
     opacity: 0;
-    }
-    
-    header .mobile-menu.active .line3 {
+}
+
+header .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
+}
+
+#inicio {
+    margin-top: 100px;
+}
+
+#inicio .minha-logo {
+    display: flex;
+}
+
+#inicio .minha-logo img {
+    margin: 0 auto;
+    width: 80px;
+    /* Ajuste o tamanho conforme necessário */
+    animation: glow 2s infinite alternate;
+}
+
+#inicio .minha-foto {
+    display: flex;
+    margin-top: 20px;
+}
+
+#inicio .minha-foto img {
+    margin: 0 auto;
+    width: 270px;
+    border-radius: 50%;
+}
+
+.txt-animado {
+    font-size: 1.6em;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.txt-animado span {
+    position: relative;
+}
+
+.txt-animado span::before {
+    content: "";
+    color: #66B2FF;
+    animation: palavras 20s infinite;
+}
+
+.txt-animado span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #66B2FF;
+    right: -10px;
+    opacity: 1;
+    animation: ponteiro .8s infinite, digita 20s steps(15) infinite;
+    width: calc(100% + 10px);
+    background-color: #292929;
+}
+
+.sobre-mim {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.5em;
+    /* Aumentei o tamanho da fonte */
+    color: white;
+    width: 85%;
+    margin: 20px auto;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sobre-mim span {
+    color: red;
+}
+
+#certificados {
+    display: grid;
+    margin-top: 70px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#certificados h1 {
+    margin: 0 auto;
+    font-size: 3em;
+    color: #66B2FF;
+    font-family: "Poppins", serif;
+    text-align: center;
+}
+
+#certificados h2 {
+    font-size: 1.5em;
+    margin: 10px auto;
+    color: white;
+    font-family: "Poppins", serif;
+    text-align: center;
+}
+
+#certificados .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Layout responsivo */
+    gap: 20px;
+    /* Espaçamento entre os certificados */
+    padding: 10px;
+}
+
+#certificados .img-certificado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(145deg, #F8F8F8, #ECECEC);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra leve */
+    transition: transform 0.3s ease;
+    /* Animação ao passar o mouse */
+}
+
+#certificados .img-certificado:hover {
+    transform: scale(1.05);
+    /* Efeito de zoom */
+}
+
+#certificados .img-certificado img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    /* Espaço entre a imagem e o texto */
+}
+
+#certificados .img-certificado p {
+    font-weight: bolder;
+    color: #333;
+    /* Texto mais escuro para contraste */
+    font-size: 1em;
+    margin: 5px 0;
+    font-family: "Poppins", sans-serif;
+}
+
+#certificados .img-certificado p a {
+    text-decoration: none;
+    color: #ff6666;
+    /* Tom vermelho mais suave */
+    font-weight: bold;
+}
+
+#certificados .img-certificado p a:hover {
+    color: #ff3333;
+    /* Tom mais escuro ao passar o mouse */
+}
+
+
+/*FIM CERTIFICADOS*/
+
+#hardskills {
+    display: grid;
+    margin-top: 70px;
+}
+
+#hardskills h1 {
+    margin: 0 auto;
+    font-size: 3em;
+    color: #66B2FF;
+    font-family: "Poppins", serif;
+}
+
+#hardskills .container {
+    display: grid;
+    gap: 20px;
+}
+
+#hardskills .container .skills {
+    margin: 20px auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 110px;
+    padding: 10px;
+    text-align: center;
+}
+
+#hardskills .container .skills p {
+    font-size: 1.4em;
+    font-weight: bolder;
+    color: #66B2FF;
+}
+
+#hardskills .container .skills i {
+    font-size: 50px;
+    margin: 5px 0px;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+
+    /* Celular pequeno */
+    #hardskills .container {
+        grid-template-columns: repeat(2, 1fr);
     }
-    
-    #inicio {
-        margin-top: 100px;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    /* Celular médio/grande */
+    #hardskills .container {
+        grid-template-columns: repeat(2, 1fr);
     }
-    
-    #inicio .minha-logo {
-        display: flex;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* Tablet */
+    #hardskills .container {
+        grid-template-columns: repeat(3, 1fr);
     }
-    
-    #inicio .minha-logo img {
-        margin: 0 auto;
-        width: 80px; /* Ajuste o tamanho conforme necessário */
-        animation: glow 2s infinite alternate;
+}
+
+@media (min-width: 1025px) and (max-width: 1366px) {
+
+    /* Notebook/PC pequeno */
+    #hardskills .container {
+        grid-template-columns: repeat(4, 1fr);
     }
-    
-    #inicio .minha-foto {
-        display: flex;
-        margin-top: 20px;
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+
+    /* PC grande */
+    #hardskills .container {
+        grid-template-columns: repeat(4, 1fr);
     }
-    
-    #inicio .minha-foto img {
-        margin: 0 auto;
-        width: 270px;
-        border-radius: 50%;
+}
+
+@media (min-width: 1921px) {
+
+    /* TV/Monitores 4K+ */
+    #hardskills .container {
+        grid-template-columns: repeat(4, 1fr);
     }
-    
-    .txt-animado {
-        font-size: 1.6em;
-        font-weight: 300;
-        text-align: center;
-        margin-top: 50px;
-        color: white;
-    }
-    
-    .txt-animado span {
-        position: relative;
-    }
-    
-    .txt-animado span::before {
-        content: "";
-        color: #66B2FF;
-        animation: palavras 20s infinite;
-    }
-    
-    .txt-animado span::after {
-        content: "";
-        position: absolute;
-        height: 100%;
-        border-left: 2px solid #66B2FF;
-        right: -10px;
-        opacity: 1;
-        animation: ponteiro .8s infinite, digita 20s steps(15) infinite;
-        width: calc(100% + 10px);
-        background-color: #292929;
-    }
-    
-    .sobre-mim {
-        text-align: center;
-        font-weight: lighter;
-        font-size: 1.5em; /* Aumentei o tamanho da fonte */
-        color: white;
-        width: 85%;
-        margin: 20px auto;
-        line-height: 1.6;
-        font-family: Arial, Helvetica, sans-serif;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
-    
-    .sobre-mim span {
-        color: red;
-    }
-    
-    #certificados {
-        display: grid;
-        margin-top: 70px;
-        padding: 20px;
-        border-radius: 10px;
-    }
-    
-    #certificados h1 {
-        margin: 0 auto;
-        font-size: 3em;
-        color: #66B2FF;
-        font-family: "Poppins", serif;
-        text-align: center;
-    }
-    
-    #certificados h2 {
-        font-size: 1.5em;
-        margin: 10px auto;
-        color: white;
-        font-family: "Poppins", serif;
-        text-align: center;
-    }
-    
-    #certificados .container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Layout responsivo */
-        gap: 20px; /* Espaçamento entre os certificados */
-        padding: 10px;
-    }
-    
-    #certificados .img-certificado {
-        display: flex;
+}
+
+/*FIM HARD SKILLS*/
+
+#projetos {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#projetos h1 {
+    font-size: 2.5em;
+    color: #66B2FF;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0px;
+}
+
+.proje {
+    margin: 20px 0px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+    width: 300px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.proje:hover {
+    transform: translateY(-5px);
+}
+
+.proje p {
+    color: #66B2FF;
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
+
+.imagem-projeto:hover {
+    transform: scale(1.05);
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.ver {
+    background-color: yellow;
+    color: black;
+}
+
+.ver:hover {
+    background-color: gold;
+    transform: scale(1.1);
+}
+
+.baixar {
+    background-color: orange;
+    color: white;
+}
+
+.baixar:hover {
+    background-color: darkorange;
+    transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+    .container {
         flex-direction: column;
         align-items: center;
-        text-align: center;
-        padding: 15px;
-        background: linear-gradient(145deg, #F8F8F8, #ECECEC);
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
-        transition: transform 0.3s ease; /* Animação ao passar o mouse */
     }
-    
-    #certificados .img-certificado:hover {
-        transform: scale(1.05); /* Efeito de zoom */
-    }
-    
-    #certificados .img-certificado img {
-        border-radius: 10px;
-        max-width: 100%;
-        height: auto;
-        border: 2px solid black;
-        margin-bottom: 10px; /* Espaço entre a imagem e o texto */
-    }
-    
-    #certificados .img-certificado p {
-        font-weight: bolder;
-        color: #333; /* Texto mais escuro para contraste */
-        font-size: 1em;
-        margin: 5px 0;
-        font-family: "Poppins", sans-serif;
-    }
-    
-    #certificados .img-certificado p a {
-        text-decoration: none;
-        color: #ff6666; /* Tom vermelho mais suave */
-        font-weight: bold;
-    }
-    
-    #certificados .img-certificado p a:hover {
-        color: #ff3333; /* Tom mais escuro ao passar o mouse */
-    }
-    
-    
-    /*FIM CERTIFICADOS*/
-    
-    #hardskills {
-        display: grid;
-        margin-top: 70px;
-      }
-      
-      #hardskills h1 {
-        margin: 0 auto;
-        font-size: 3em;
-        color: #66B2FF;
-        font-family: "Poppins", serif;
-      }
-      
-      #hardskills .container {
-        display: grid;
-        gap: 20px;
-      }
-      
-      #hardskills .container .skills {
-        margin: 20px auto;
-        border: 1px solid white;
-        border-radius: 10px;
-        width: 110px;
-        padding: 10px;
-        text-align: center;
-      }
-      
-      #hardskills .container .skills p {
-        font-size: 1.4em;
-        font-weight: bolder;
-        color: #66B2FF;
-      }
-      
-      #hardskills .container .skills i {
-        font-size: 50px;
-        margin: 5px 0px;
-      }
-      
-      /* Responsividade */
-      @media (max-width: 480px) {
-        /* Celular pequeno */
-        #hardskills .container {
-          grid-template-columns: repeat(2, 1fr);
-        }
-      }
-      
-      @media (min-width: 481px) and (max-width: 767px) {
-        /* Celular médio/grande */
-        #hardskills .container {
-          grid-template-columns: repeat(2, 1fr);
-        }
-      }
-      
-      @media (min-width: 768px) and (max-width: 1024px) {
-        /* Tablet */
-        #hardskills .container {
-          grid-template-columns: repeat(3, 1fr);
-        }
-      }
-      
-      @media (min-width: 1025px) and (max-width: 1366px) {
-        /* Notebook/PC pequeno */
-        #hardskills .container {
-          grid-template-columns: repeat(4, 1fr);
-        }
-      }
-      
-      @media (min-width: 1367px) and (max-width: 1920px) {
-        /* PC grande */
-        #hardskills .container {
-          grid-template-columns: repeat(4, 1fr);
-        }
-      }
-      
-      @media (min-width: 1921px) {
-        /* TV/Monitores 4K+ */
-        #hardskills .container {
-          grid-template-columns: repeat(4, 1fr);
-        }
-      }
-    
-    /*FIM HARD SKILLS*/
-    
-    #projetos {
-        text-align: center;
-        margin-top: 50px;
-    }
-    
-    #projetos h1 {
-        font-size: 2.5em;
-        color: #66B2FF;
-        font-family: "Poppins", sans-serif;
-        text-transform: uppercase;
-    }
-    
-    .container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-        margin: 20px 0px;
-    }
-    
+
     .proje {
-        margin: 20px 0px;
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-        transition: transform 0.3s ease-in-out;
-        width: 300px;
-        text-align: center;
-        border: 1px solid #ccc;
+        width: 90%;
     }
-    
-    .proje:hover {
-        transform: translateY(-5px);
-    }
-    
-    .proje p {
-        color: #66B2FF;
-        font-size: 1.5em;
-        margin-bottom: 8px;
-    }
-    
-    .imagem-projeto:hover {
-        transform: scale(1.05);
-    }
-    
-    .botoes {
-        display: flex;
-        justify-content: center;
-        gap: 8px;
-    }
-    
-    .btn {
-        padding: 8px 12px;
-        border-radius: 8px;
-        border: none;
-        cursor: pointer;
-        font-size: 1.2em;
-        font-weight: bold;
-        transition: background 0.3s, transform 0.2s;
-    }
-    
-    .ver  {
-        background-color: yellow;
-        color: black;
-    }
-    
-    .ver:hover {
-        background-color: gold;
-        transform: scale(1.1);
-    }
-    
-    .baixar {
-        background-color: orange;
-        color: white;
-    }
-    
-    .baixar:hover {
-        background-color: darkorange;
-        transform: scale(1.1);
-    }
-    
-    @media (max-width: 767px) {
-        .container {
-            flex-direction: column;
-            align-items: center;
-        }
-        .proje {
-            width: 90%;
-        }
-    }
-    
-    @media (min-width: 768px) and (max-width: 1024px) {
-        .container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-        }
-        .proje {
-            width: 90%;
-        }
-    }
-    
-    @media (min-width: 1025px) {
-        .container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-        }
-        .proje {
-            width: 90%;
-        }
-    }
-    
-    /*FIM PROJETOS*/
-    
-    #servicos {
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
         display: grid;
-        margin-top: 70px;
-        text-align: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
-    
-    #servicos h1 {
-        margin: 0 auto;
-        font-size: 3em;
-        color: #66B2FF;
-        font-family: "Poppins", sans-serif;
+
+    .proje {
+        width: 90%;
     }
-    
-    #servicos ul {
-        text-align: justify;
-        margin: 20px 40px;
-    }
-    
-    #servicos li {
-        font-size: 1.5em;
-        color: white;
-        line-height: 1.6;
-    }
-    
-    
-    /*FIM SERVICOS*/
-    
-    #contatos {
+}
+
+@media (min-width: 1025px) {
+    .container {
         display: grid;
-        margin-top: 70px;
-        margin-bottom: 50px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
     }
-    
-    #contatos h1 {
-        margin: 0 auto;
-        font-size: 3em;
-        color: #66B2FF;
-        font-family: "Poppins", serif;
+
+    .proje {
+        width: 90%;
     }
-    
-    .redes-sociais > a > button{
-        font-size: 1.5em;
-        padding: 10px;
-        border-radius: 50%;
-        margin: 0px 5px;
-        cursor: pointer;
-        background-color: white;
-        color: rgb(0, 0, 0);
-        border-style: solid;
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.437);
+}
+
+/*FIM PROJETOS*/
+
+#servicos {
+    display: grid;
+    margin-top: 70px;
+    text-align: center;
+}
+
+#servicos h1 {
+    margin: 0 auto;
+    font-size: 3em;
+    color: #66B2FF;
+    font-family: "Poppins", sans-serif;
+}
+
+#servicos ul {
+    text-align: justify;
+    margin: 20px 40px;
+}
+
+#servicos li {
+    font-size: 1.5em;
+    color: white;
+    line-height: 1.6;
+}
+
+
+/*FIM SERVICOS*/
+
+#contatos {
+    display: grid;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+#contatos h1 {
+    margin: 0 auto;
+    font-size: 3em;
+    color: #66B2FF;
+    font-family: "Poppins", serif;
+}
+
+.redes-sociais>a>button {
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0px 5px;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-style: solid;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.437);
+}
+
+.redes-sociais {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*FIM CONTATOS*/
+
+
+@keyframes digita {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
     }
-    
-    .redes-sociais{
-        text-align: center;
-        margin-top: 20px;
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 10px);
     }
-    
-    /*FIM CONTATOS*/
-    
-    
-    @keyframes digita {
-        10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
-            width: 0;
-        }
-        5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
-            width: calc(100% + 10px);
-        }
-    } 
-    
-    @keyframes ponteiro {
-        0%{
-            border-left: 2px solid #292929;
-        }
+}
+
+@keyframes ponteiro {
+    0% {
+        border-left: 2px solid #292929;
     }
-    
-    @keyframes palavras {
-        0%,100%{
-            content: "meu nome é Gabriel!";
-        }
-        
+}
+
+@keyframes palavras {
+
+    0%,
+    100% {
+        content: "meu nome é Gabriel!";
     }
-    
-    @keyframes glow {
-        from {
-            filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.5));
-        }
-        to {
-            filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.8));
-        }
+
+}
+
+@keyframes glow {
+    from {
+        filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.5));
     }
-    
-    @media (max-width: 999px) {
+
+    to {
+        filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.8));
+    }
+}
+
+@media (max-width: 999px) {
     body {
         overflow-x: hidden;
     }
+
     header .nav-list {
         position: absolute;
         top: 8vh;
@@ -552,13 +596,63 @@
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
     }
+
     header .nav-list li {
         margin-left: 0;
         opacity: 0;
     }
+
     header .mobile-menu {
         display: block;
     }
-    }
-    
-    
+}
+
+/* Animação para h1 - Aparece de baixo para cima com leve fade */
+h1 {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animação para img-certificado - Suave descida com rotação sutil */
+.img-certificado {
+    opacity: 0;
+    transform: translateY(100px) rotate(-10deg);
+    transition: opacity 5s ease-in-out, transform 5s ease-in-out;
+}
+
+.show-dois {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+}
+
+/* Animação para skills - Aparece com efeito de zoom + blur removendo gradualmente */
+.skills {
+    opacity: 0;
+    filter: blur(10px);
+    transform: scale(0.8);
+    transition: opacity 1s ease, transform 1s ease, filter 1s ease;
+}
+
+.show-tres {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+}
+
+/* Animação para .proje - Aparição suave com leve subida e rotação */
+.proje {
+    opacity: 0;
+    transform: translateY(20px) rotate(10deg) scale(0.95);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.show-quatro {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg) scale(1);
+}
