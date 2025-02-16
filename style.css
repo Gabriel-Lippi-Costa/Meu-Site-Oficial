@@ -60,7 +60,7 @@ header .nav-list {
 
 header .nav-list li {
     font-family: "Merienda", serif;
-    font-size: 24px;
+    font-size: 16px;
     letter-spacing: 3px;
     margin-left: 32px;
 }
@@ -466,6 +466,110 @@ header .mobile-menu.active .line3 {
         width: 90%;
     }
 }
+
+/*COMEÇO PRÊMIOS*/
+
+#premios {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.premio {
+    margin-top: 20px;
+}
+
+#premios h1 {
+    margin: 0 auto;
+    font-size: 3em;
+    color: #66B2FF;
+    font-family: "Poppins", sans-serif;
+}
+
+.cont {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    padding: 25px;
+    background-color: #3f3f3f;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
+    position: relative;
+}
+
+.cont::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 20px solid transparent;
+    border-top: 20px solid #66B2FF;
+    border-right: 20px solid #66B2FF;
+}
+
+.img {
+    margin-bottom: 20px;
+}
+
+.cont p {
+    text-align: left;
+    height: 215px;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    line-height: 1.3;
+}
+
+.cont p::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent, #3f3f3f);
+}
+
+.cont h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    position: relative;
+}
+
+.cont button {
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    margin-top: 15px;
+    background-color: #66B2FF;
+    color: #313131;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out; 
+}
+
+.cont button:hover {
+    background-color: transparent;
+    color: #66B2FF;
+    transition: all 0.2s ease-in-out;
+}
+
+.premio.ativar .cont p {
+    height: auto;
+    overflow: visible;
+}
+
+.premio.ativar .cont p::before {
+    display: none;
+}
+
+
+/*FIM PRÊMIOS*/
+
 
 /*FIM PROJETOS*/
 
